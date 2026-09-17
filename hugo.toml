@@ -1,4 +1,39 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://h-weaver.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Harrison Weaver'
 theme = 'archie'
+pygmentsstyle = 'github-dark'
+
+[pagination]
+	pagerSize = 3 # articles per page
+
+[params]
+	mode="auto" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "Computer Systems, Networking and Information Technology Student."
+
+# menu items
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About Me"
+url = "/about"
+weight = 3
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/h-weaver"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+url = "https://www.linkedin.com/in/harrison-daniel-weaver/"
